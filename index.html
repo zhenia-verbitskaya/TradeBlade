@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon.png" />
+    <title>TradeBlade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="body">
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="/">
+          <img class="header-logo" src="./images/logo.svg" alt="TradeBlade" />
+        </a>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="#statistics" class="header-nav-link">Цифры</a></li>
+            <li><a href="#deals" class="header-nav-link">Сделки онлайн</a></li>
+            <li><a href="#about" class="header-nav-link">О компании</a></li>
+            <li><a href="#start" class="header-nav-link">Как начать</a></li>
+            <li><a href="#tariffs" class="header-nav-link">Тарифы</a></li>
+            <li><a href="#reviews" class="header-nav-link">Отзывы</a></li>
+            <li><a href="#faq" class="header-nav-link">FAQ</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="mob-menu-open-btn">
+          <img src="./images/mob-menu-open-btn.png" alt="Open menu" />
+        </button>
+        <div class="header-btns">
+          <button type="button" class="header-btn login-btn">Вход</button>
+          <button type="button" class="header-btn register-btn">
+            Регистрация
+          </button>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu-container is-opened">
+        <div class="mob-menu-top">
+          <button type="button" class="mob-menu-close-btn">
+            <img src="./images/mob-menu-close-btn.png" alt="Close menu" />
+          </button>
+          <nav>
+            <ul class="header-mob-nav">
+              <li>
+                <a href="#statistics" class="header-mob-nav-link">Цифры</a>
+              </li>
+              <li>
+                <a href="#deals" class="header-mob-nav-link">Сделки онлайн</a>
+              </li>
+              <li>
+                <a href="#about" class="header-mob-nav-link">О компании</a>
+              </li>
+              <li>
+                <a href="#start" class="header-mob-nav-link">Как начать</a>
+              </li>
+              <li><a href="#tariffs" class="header-mob-nav-link">Тарифы</a></li>
+              <li><a href="#reviews" class="header-mob-nav-link">Отзывы</a></li>
+              <li><a href="#faq" class="header-mob-nav-link">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-btns">
+          <button type="button" class="mob-menu-btn mob-register-btn">
+            Регистрация
+          </button>
+          <button type="button" class="mob-menu-btn mob-login-btn">
+            Войти
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-info">
+            <div class="hero-info-block">
+              <h1
+                class="hero-heading"
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+              >
+                Моментально копируй сделки профи трейдеров
+              </h1>
+              <p class="hero-descr">
+                Начни копировать сделки с успешной командой профессиональных
+                трейдеров в автоматическом режиме.
+              </p>
+            </div>
+            <img
+              class="hero-img"
+              src="./images/hero-img.png"
+              alt="Пример сделки"
+            />
+          </div>
+          <form class="hero-form">
+            <input
+              type="email"
+              placeholder="ВАШ E-MAIL"
+              class="hero-form-input"
+            />
+            <button type="submit" class="hero-form-btn">Начать</button>
+          </form>
+          <p class="hero-form-descr">5 дней бесплатного пользования</p>
+        </div>
+        <div class="deco-white"></div>
+      </section>
+      <!-- STATISTICS -->
+      <section class="stat-section" id="statistics">
+        <div class="container stat-container">
+          <div class="stat-numbers">
+            <div class="stat-info">
+              <h2
+                class="stat-heading"
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+              >
+                Цифры
+              </h2>
+              <p class="stat-descr">Cентябрь 2022</p>
+            </div>
+            <div class="stat-details">
+              <div class="stat-detail">
+                <div class="detail-title">Торговой прибыли</div>
+                <div class="detail-number">2756%</div>
+              </div>
+              <div class="stat-detail">
+                <div class="detail-title">Фьючерсных и спотовых сделок</div>
+                <div class="detail-number">67</div>
+              </div>
+              <div class="stat-detail">
+                <div class="detail-title">Прибыль подписчиков</div>
+                <div class="detail-number">375000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DEALS -->
+      <section class="deals-section" id="deals">
+        <div class="deals-container">
+          <h2
+            class="deals-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            Прошедшие сделки
+          </h2>
+          <div class="deals-status">
+            <span class="dot"></span>
+            <span>Онлайн</span>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper deal-cards">
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-1.png"
+                  alt="Сделка 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-2.png"
+                  alt="Сделка 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-3.png"
+                  alt="Сделка 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-4.png"
+                  alt="Сделка 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-1.png"
+                  alt="Сделка 5"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-2.png"
+                  alt="Сделка 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-3.png"
+                  alt="Сделка 7"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="./images/deal-4.png"
+                  alt="Сделка 8"
+                />
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div class="deco-white"></div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about-section" id="about">
+        <div class="container about-container">
+          <div class="about-info">
+            <h2
+              class="about-heading"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+            >
+              О компании
+            </h2>
+            <p class="about-descr">
+              Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+              является авторизованным официальным брокером биржи Binance.
+            </p>
+            <p class="about-descr">
+              Он представляет пользователям множество преимуществ, таких как
+              более високая скорость синхронизации API и возможность создать
+              учетную запись Binance через платформу TradeBlade всего в 1 клик.
+            </p>
+          </div>
+          <div class="about-form-block">
+            <h3 class="about-form-title">
+              Попробуйте сейчас и получите<br />5 дней бесплатного пользования
+            </h3>
+            <form class="about-form">
+              <input
+                type="email"
+                placeholder="ВАШ E-MAIL"
+                class="about-form-input"
+              />
+              <button type="submit" class="about-form-btn">Попробовать</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURES -->
+      <section class="features-section" id="features">
+        <div class="container features-container">
+          <h2
+            class="features-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            tradeblade это
+          </h2>
+          <div class="features-block">
+            <!-- feature-1 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./images/feature-1.svg"
+                alt="Копи–трейдинг 24/7"
+              />
+              <div>
+                <h4 class="feature-title">Копи–трейдинг 24/7</h4>
+                <p class="feature-descr">
+                  Copy–Trading позволяет следить за сделками команды и получать
+                  прибыль 24/7 без каких–либо усилий или проблем для вас.
+                </p>
+              </div>
+            </div>
+            <!-- feature-2 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./images/feature-2.svg"
+                alt="Торговля спотовыми и фьючерсными сделками"
+              />
+              <div>
+                <h4 class="feature-title">
+                  Торговля спотовыми и фьючерсными сделками
+                </h4>
+                <p class="feature-descr">
+                  Платформа для копи–трейдинга поддерживает торговлю как
+                  спотовыми, так и фьючерсными сделками на Binance.
+                </p>
+              </div>
+            </div>
+            <!-- feature-3 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./images/feature-3.svg"
+                alt="Высокая прибыль каждий день"
+              />
+              <div>
+                <h4 class="feature-title">Высокая прибыль каждий день</h4>
+                <p class="feature-descr">
+                  Каждая сделка показывает хорошие результаты на рынках за счет
+                  хорошего денежного и риск менеджмента.
+                </p>
+              </div>
+            </div>
+            <!-- feature-4 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./images/feature-4.svg"
+                alt="Собственный курс по трейдингу"
+              />
+              <div>
+                <h4 class="feature-title">Собственный курс по трейдингу</h4>
+                <p class="feature-descr">
+                  Мы хотим менять комьюнити, улучшать его. В личном кабинете на
+                  сайте вы найдете наш собственный курс по криптовалютам,
+                  который поможет увереннее понимать наши сигналы и
+                  разрабатывать свои.
+                </p>
+              </div>
+            </div>
+            <!-- feature-5 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./images/feature-5.svg"
+                alt="Сильное окружение"
+              />
+              <div>
+                <h4 class="feature-title">Сильное окружение</h4>
+                <p class="feature-descr">
+                  Ты попадаешь в сильное крипто окружение, ведь развиваться
+                  легче когда нас много. В чате присутствуют люди из нашей
+                  команды, которые общаються со всеми, помагают и подсказывают.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deco-purple"></div>
+      </section>
+      <!-- START -->
+      <section class="start-section" id="start">
+        <div class="container start-container">
+          <h2
+            class="start-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            Как начать пользоваться сервисом
+          </h2>
+          <div class="start-steps">
+            <!-- step-1 -->
+            <div class="step">
+              <h4 class="step-title">Создайте аккаунт</h4>
+              <p class="step-descr">
+                Начните бесплатную 3-дневную пробную версию. Кредитная карта не
+                требуется.
+              </p>
+            </div>
+            <!-- step-2 -->
+            <div class="step">
+              <h4 class="step-title">Подключить обмен API ключами</h4>
+              <p class="step-descr">
+                Просто вставьте свои ключи API из личного кабинета.
+              </p>
+            </div>
+            <!-- step-3 -->
+            <div class="step">
+              <h4 class="step-title">Настройте аккаунт</h4>
+              <p class="step-descr">
+                Поставьте нужные настройки депозита на каждый сигнал и нажмите
+                сохранить.
+              </p>
+            </div>
+            <!-- step-4 -->
+            <div class="step">
+              <h4 class="step-title">Ваш копитрейдер запущен</h4>
+              <p class="step-descr">
+                Просто расслабьтесь и начните получать пассивный доход от
+                криптовалюты с помощью TradeBlade
+              </p>
+            </div>
+          </div>
+          <button type="button" class="start-btn">Попробовать бесплатно</button>
+        </div>
+      </section>
+      <!-- PRICES -->
+      <section class="tariffs-section" id="tariffs">
+        <div class="container tariffs-container">
+          <h2
+            class="tariffs-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            Тарифы
+          </h2>
+          <div class="tariffs-tabs">
+            <div class="spot-tab">Спот</div>
+            <div class="futures-tab">Фьючерс</div>
+          </div>
+          <div class="tariffs-block">
+            <div class="standard-tariff-block">
+              <div>
+                <h3 class="tariff-title">Standart</h3>
+                <ul class="tariff-features">
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Ручной трейдинг</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>
+                      Автоматическое или полуавтоматическое копирование сделок
+                    </p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Личный кабинет со статистикой</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Среднесрочные сделки с уровнями набора портфеля</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="price-info">
+                  <div class="price-block">
+                    <span class="main-price">$234</span>
+                    <span class="discount">-35%</span>
+                  </div>
+                  <div class="price-term">
+                    <span>12 месяцев</span>
+                    <img src="./images/arrow-down.svg" alt="Стрелка вниз" />
+                  </div>
+                </div>
+                <button type="button" class="tariff-btn">
+                  <span class="tariff-btn-title">Попробовать</span>
+                  <span class="tariff-btn-note">5 дней бесплатно</span>
+                </button>
+              </div>
+            </div>
+            <div class="vip-tariff-block">
+              <div>
+                <h3 class="tariff-title">VIP</h3>
+                <ul class="tariff-features">
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Ручной трейдинг</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>
+                      Автоматическое или полуавтоматическое копирование сделок
+                    </p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Личный кабинет со статистикой</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Краткосрочные, среднесрочные и инвест сделки</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Доступ в Vip чат с командой</p>
+                  </li>
+                  <li class="tariff-feature">
+                    <img
+                      class="feature-tick"
+                      src="./images/tick-icon.svg"
+                      alt="Пункт"
+                    />
+                    <p>Наш авторский курс по трейдингу</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="price-info">
+                  <div class="price-block">
+                    <span class="main-price">$234</span>
+                    <span class="discount">-35%</span>
+                  </div>
+                  <div class="price-term">
+                    <span>12 месяцев</span>
+                    <img src="./images/arrow-down.svg" alt="Стрелка вниз" />
+                  </div>
+                </div>
+                <button type="button" class="tariff-btn">
+                  <span class="tariff-btn-title">Попробовать</span>
+                  <span class="tariff-btn-note">5 дней бесплатно</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- REVIEWS -->
+      <section class="reviews-section" id="reviews">
+        <div class="container reviews-container">
+          <h2
+            class="reviews-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            Отзывы учасников комьюнити
+          </h2>
+          <div class="reviews">
+            <div>
+              <!-- review-1 -->
+              <div class="review-block">
+                <img
+                  class="review-img"
+                  src="./images/review-1.png"
+                  alt="@ArtemGuriev"
+                />
+                <div class="review-info">
+                  <h4 class="review-name">@ArtemGuriev</h4>
+                  <div class="review-note">Общая прибыль 3043.27 USD</div>
+                  <p class="review-text">
+                    Я запустил спот-бота 5 января. За 25 дней я заработал более
+                    3 тысяч на споте без единого убытка и без страха ликвидации.
+                    Большое спасибо TradeBlade за создание такого замечательного
+                    бота.
+                  </p>
+                </div>
+              </div>
+              <!-- review-3 -->
+              <div class="review-block">
+                <img
+                  class="review-img"
+                  src="./images/review-3.png"
+                  alt="@gWagon"
+                />
+                <div class="review-info">
+                  <h4 class="review-name">@gWagon</h4>
+                  <div class="review-note">Общую прибыль не афиширует</div>
+                  <p class="review-text">
+                    Попробовал. Понравилось. Рекомендую ли я? Да. Но адектватно
+                    понимаю, что чем больше людей тем может быть меньше
+                    прибыли...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- review-2 -->
+              <div class="review-block">
+                <img
+                  class="review-img"
+                  src="./images/review-2.png"
+                  alt="@XPonse"
+                />
+                <div class="review-info">
+                  <h4 class="review-name">@XPonse</h4>
+                  <div class="review-note">Общую прибыль не афиширует</div>
+                  <p class="review-text">
+                    Мой капитал 2к. Если я получаю 10 долларов в день, то за
+                    месяц я зарабатываю 300 долларов. То есть 15% в месяц, что
+                    мне более чем достаточно.
+                  </p>
+                </div>
+              </div>
+              <!-- review-4 -->
+              <div class="review-block">
+                <img
+                  class="review-img"
+                  src="./images/review-4.png"
+                  alt="@sanyaMnS"
+                />
+                <div class="review-info">
+                  <h4 class="review-name">@sanyaMnS</h4>
+                  <div class="review-note">Общая прибыль 4 405.96 USD</div>
+                  <p class="review-text">
+                    Сначала немного расстроился ибо заработал 4$ с одной крупной
+                    сделки. Но зато понял что все равно в плюсе. На следующей
+                    сделке все полетело вверх.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="reviews-btn">
+            Загрузить больше отзывов
+          </button>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="faq-section" id="faq">
+        <div class="container faq-container">
+          <h2
+            class="faq-heading"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            Часто задаваемые вопросы
+          </h2>
+
+          <div class="accordion-container">
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Что такое TradeBlade
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="ac-text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </div>
+            </div>
+
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Что TradeBlade предлагает инвесторам
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="ac-text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </div>
+            </div>
+
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">
+                  Должен ли я перевести свои средства на TradeBlade
+                </button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="ac-text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROMO -->
+      <section class="promo-section">
+        <div class="container promo-container">
+          <h3 class="promo-heading">
+            Начните прямо сейчас с бесплатным 5–и дневным пробным периодом!
+          </h3>
+          <form class="promo-form">
+            <input
+              type="email"
+              placeholder="ВАШ E-MAIL"
+              class="promo-form-input"
+            />
+            <button type="submit" class="promo-form-btn">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-quick-nav">Быстрая навигация</div>
+          <nav>
+            <ul class="mob-footer-nav">
+              <li><a href="#statistics" class="footer-nav-link">Цифры</a></li>
+              <li>
+                <a href="#deals" class="footer-nav-link">Сделки онлайн</a>
+              </li>
+              <li><a href="#about" class="footer-nav-link">О компании</a></li>
+              <li>
+                <a href="#features" class="footer-nav-link">Tradeblade это</a>
+              </li>
+              <li><a href="#tariffs" class="footer-nav-link">Тарифы</a></li>
+              <li><a href="#faq" class="footer-nav-link">FAQ</a></li>
+            </ul>
+          </nav>
+          <a href="#header" class="dt-footer-logo">
+            <img class="footer-logo" src="./images/logo.svg" alt="TradeBlade" />
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <a href="#header" class="mob-footer-logo">
+            <img class="footer-logo" src="./images/logo.svg" alt="TradeBlade" />
+          </a>
+          <nav>
+            <ul class="dt-footer-nav">
+              <li><a href="#statistics" class="footer-nav-link">Цифры</a></li>
+              <li>
+                <a href="#deals" class="footer-nav-link">Сделки онлайн</a>
+              </li>
+              <li><a href="#about" class="footer-nav-link">О компании</a></li>
+              <li>
+                <a href="#features" class="footer-nav-link">Tradeblade это</a>
+              </li>
+              <li><a href="#tariffs" class="footer-nav-link">Тарифы</a></li>
+              <li><a href="#faq" class="footer-nav-link">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="footer-rights">
+            © 2022 TradeBlade. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/faq.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/animate.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
+  </body>
+</html>
